@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0c0c0c;
+}
+
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+}
+
+/* Intro Section */
+.icon-scale {
+  opacity: 0;
+  transform: scale(0);
+  animation: scaleUp 2s ease-in-out forwards;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1.8);
+    opacity: 1;
+  }
+}
+
+
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 1.5s ease-out;
+}
+
+
+@keyframes slideUpDelayed {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#landingContent {
+  animation: slideUpDelayed 1s ease-out 4.6s forwards;
+}
+
+
+
+
+.animated-element {
+  opacity: 0; /* Initially hidden */
+  transform: translateY(30px); /* Initially shifted down */
+}
+
+/* Keyframes for the shift-up animation */
+@keyframes shiftFromDown {
+  0% {
+    opacity: 0;
+    transform: translateY(30px); /* Start from shifted down */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Move to original position */
+  }
+}
+
+/* Add class when element is in view */
+.visible {
+  animation: shiftFromDown 0.5s ease-in-out forwards; /* Apply the animation when visible */
+}
+
+
+/* Loader styles */
+.loader-border {
+  border: 4px solid transparent; /* Transparent border for background */
+  border-top-color: black; /* Black color for the spinning part */
+  border-radius: 50%; /* Circle shape */
+  width: 64px; /* Circle size */
+  height: 64px; /* Circle size */
+  animation: spin 1s linear infinite; /* Infinite spinning animation */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); } /* Initial position */
+  100% { transform: rotate(360deg); } /* Full rotation */
+}
+
+/* Loader container styling */
+#loader {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white; /* White background */
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* Hide the loader after 1 second */
+body.loaded #loader {
+  display: none;
+}
+
+
+
+
+
+
+/* Custom Font */
+@font-face {
+    font-family: 'Amsterdam Three';
+    src: url('Assets/amsterdam-signature-three.ttf') format('woff2'),
+        url('Assets/amsterdam-signature-three.ttf') format('woff');
+}
+

@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gaur Legal Service | Adv. Hanumant Singh – Supreme Court Lawyer & Legal Consultant in India</title>
+  <meta name="description"
+    content="Gaur Legal Service, led by Supreme Court Advocate Hanumant Singh, offers expert legal solutions in corporate, civil, and criminal matters across India." />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-black text-white font-[Montserrat]">
+
+  <!-- Loader -->
+  <div id="loader" class="fixed top-0 left-0 w-full h-full bg-white flex items-center justify-center z-50">
+    <div class="loader-border w-16 h-16 border-4 border-solid border-white border-t-black rounded-full animate-spin">
+    </div>
+  </div>
+
+
+
+
+  <!-- Navigation Bar Start -->
+  <nav class="w-full fixed top-0 left-0 bg-black text-white flex items-center justify-between px-6 py-4 z-50 shadow-md">
+    <!-- Advocate Name -->
+    <div class="text-xl md:text-2xl font-bold">
+      <a href="/">Gaur Legal Service</a>
+    </div>
+    <ul class="hidden md:flex space-x-6 text-sm md:text-base font-medium">
+      <li><a href="#landingSection" class="hover:text-gray-300 transition font-semibold">Home</a></li>
+      <li><a href="#about" class="hover:text-gray-300 transition font-semibold">About</a></li>
+      <li><a href="#services" class="hover:text-gray-300 transition font-semibold">Services</a></li>
+      <li><a href="#experience" class="hover:text-gray-300 transition font-semibold">Experience</a></li>
+      <li><a href="#education" class="hover:text-gray-300 transition font-semibold">Education</a></li>
+      <li><a href="#memberships" class="hover:text-gray-300 transition font-semibold">Memberships</a></li>
+      <li>
+        <a href="#contact"
+          class="bg-white text-black font-semibold px-4 py-2 rounded-full hover:bg-gray-200 transition">
+          Contact
+        </a>
+      </li>
+    </ul> <!-- Mobile Menu Button --> <button id="menu-btn" class="md:hidden text-white focus:outline-none"
+      aria-label="Toggle Menu">
+      <i id="menu-icon" class="fas fa-bars text-2xl transition-all duration-300 ease-in-out"></i>
+    </button>
+
+  </nav>
+
+  <div id="mobile-menu" class="md:hidden hidden fixed top-16 left-0 w-full bg-white text-black px-6 py-6 z-40 shadow-lg transition-all duration-300 ease-in-out">
+
+    <nav aria-label="Mobile Navigation">
+      <ul class="space-y-5 text-base font-medium">
+        <li>
+          <a href="#landingSection" class="block hover:text-gray-600 transition font-semibold">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#about" class="block hover:text-gray-600 transition font-semibold">
+            About
+          </a>
+        </li>
+        <li>
+          <a href="#services" class="block hover:text-gray-600 transition font-semibold">
+            Services
+          </a>
+        </li>
+        <li>
+          <a href="#experience" class="block hover:text-gray-600 transition font-semibold">
+            Experience
+          </a>
+        </li>
+        <li>
+          <a href="#education" class="block hover:text-gray-600 transition font-semibold">
+            Education
+          </a>
+        </li>
+        <li>
+          <a href="#memberships" class="block hover:text-gray-600 transition font-semibold">
+            Memberships
+          </a>
+        </li>
+        <li>
+          <a href="#contact"
+            class="block text-center bg-gradient-to-r from-yellow-400 to-orange-500 text-black font-bold tracking-wide px-6 py-3 rounded-full shadow-md hover:from-yellow-500 hover:to-orange-600 transition duration-300 ease-in-out w-[60%] mx-auto">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Navigation Bar End -->
+
+  <!-- Intro Overlay -->
+  <div id="introOverlay"
+    class="fixed top-0 left-0 w-full h-screen z-50 flex flex-col items-center justify-center text-center bg-black px-4 transition-opacity duration-1000 ease-in-out">
+    <!-- Gavel Icon -->
+    <div class="text-white text-[80px] md:text-[120px] icon-scale"> <i class="fa-solid fa-gavel"></i> </div>
+    <div class="w-full md:w-1/2 px-4 mt-6">
+      <h1 id="slogan" class="text-lg md:text-3xl font-semibold text-white text-center opacity-0">
+        Justice is the foundation of every nation & I am here to make sure it's served.
+      </h1>
+
+    </div>
+  </div>
+
+  <!-- Landing Section (Initially Hidden) -->
+  <section id="landingSection" class="h-screen flex items-center justify-center text-white px-4">
+    <div id="landingContent" class="text-center transform translate-y-10">
+      <!-- Company Logo -->
+      <div class="mb-4">
+        <img src="Assets/Gaur-Legal-Service-logo.png" alt="Gaur Legal Service Logo" class="mx-auto w-48">
+      </div>
+
+      <h1 class="text-3xl md:text-7xl font-bold mb-4">Adv. Hanumant Singh</h1>
+      <p class="text-lg md:text-xl mb-4">Supreme Court of India | National Legal Advisor</p>
+
+      <!-- Indian Tricolor Squares (3 dots) -->
+      <div class="flex justify-center space-x-3 mb-6">
+        <div class="w-3 h-3 bg-orange-500 "></div>
+        <div class="w-3 h-3 bg-white border-2 border-black-800"></div>
+        <div class="w-3 h-3 bg-green-500 "></div>
+      </div>
+
+      <p class="text-base md:text-lg mb-6 max-w-3xl mx-auto px-4">
+        Founder of Gaur Legal Service with expertise in litigation, corporate compliance, and international arbitration.
+      </p>
+
+      <!-- Book a Consultation Button -->
+      <button onclick="openPaymentModal()"
+        class="bg-white text-black py-3 px-8 rounded-md hover:bg-gray-200 transition duration-300 font-semibold">
+        Book an Appointment
+      </button>
+
+    </div>
+  </section>
+
+
+  <!-- UPI Payment Modal (Initially Hidden) -->
+  <div id="paymentModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center p-4 sm:p-8"
+    style="z-index: 49;">
+    <!-- Modal Box -->
+    <div
+      class="bg-white rounded-lg shadow-lg p-6 w-full max-w-md space-y-4 text-center relative max-h-[80vh] sm:max-h-[70vh] overflow-y-auto">
+      <!-- Close Button (Top-Right Icon) -->
+      <button onclick="closePaymentModal()" class="absolute top-5 right-5 text-gray-500 hover:text-red-600 text-xl">
+        <i class="fas fa-times"></i>
+      </button>
+
+      <h2 class="text-base md:text-lg font-semibold text-black">
+        Pay ₹1000 to Book Your 30-min Consultation with <span class="font-bold">Advocate Hanumant Singh</span> (Supreme
+        Court of India)
+      </h2>
+      <!-- UPI QR Code -->
+      <img src="Assets/upi-qr.png" alt="Scan to Pay via UPI" class="mx-auto w-64 sm:w-72 md:w-80 border rounded shadow" />
+      <p class="text-sm font-semibold text-gray-600">Scan the QR using GPay, PhonePe, or Paytm</p>
+
+      <!-- Instructions for Payment Confirmation -->
+      <p class="text-gray-700 mt-1 font-semibold text-sm sm:text-base">After payment, send the screenshot & UPI
+        Transaction ID to us:</p>
+
+      <!-- WhatsApp Link -->
+      <a href="https://wa.me/918318162415?text=Hi%20Sir!%20I%20have%20paid%20for%20the%20consultation.%20My%20transaction%20ID%20is%3A"
+        target="_blank" class="inline-block bg-green-500 text-white font-semibold px-4 py-2 rounded hover:bg-green-600">
+        Send via WhatsApp
+      </a>
+    </div>
+  </div>
+
+
+
+
+  <section id="about" class="px-6 py-16 bg-white text-black">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold mb-12 inline-block pb-2 border-b-2 border-black">About Me</h2>
+      <div class="flex flex-col lg:flex-row gap-12 items-start">
+        <!-- Left: Full Image, Well-Fitted with Box Shadow -->
+        <div class="w-full lg:w-1/2 flex justify-center items-start">
+          <div class="shadow-2xl rounded-lg overflow-hidden animated-element">
+            <img src="Assets/Advocate-Hanumant-Singh.jpg" alt="Advocate Hanumant Singh"
+              class="h-[400px] lg:h-[500px] w-auto object-contain">
+          </div>
+        </div>
+
+
+
+
+
+
+        <!-- Right: Text Content -->
+        <div class="w-full lg:w-1/2">
+          <h3 class="text-2xl font-semibold mb-4">Adv. Hanumant Singh</h3>
+          <p class="mb-4 font-semibold text-gray-600">
+            B.A. LL.B (Hons) Graduate with extensive internship experience at the Office of Senior Advocate Pradeep Rai
+            in the Supreme Court of India, Allahabad High Court, Delhi High Court, and Corporate Law Firms.
+          </p>
+          <p class="mb-4 font-semibold text-gray-600">
+            I have a solid foundation in both district and corporate law, with practical experience across various legal
+            functions, including litigation, corporate compliance, and client advisory services.
+          </p>
+          <p class="mb-6 font-semibold text-gray-600">
+            As the National Legal Advisor for Social Justice & Women Empowerment Board (Govt. of India) and Founder of
+            Gaur Legal Service, I bring expertise in legal research, case management, and corporate law to every client
+            engagement.
+          </p>
+
+          <!-- Skills Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+            <div class="bg-gray-100 p-3 rounded-md text-left font-semibold animated-element">Legal Research & Analysis
+            </div>
+            <div class="bg-gray-100 p-3 rounded-md text-left font-semibold animated-element">Case Management</div>
+            <div class="bg-gray-100 p-3 rounded-md text-left font-semibold animated-element">Client Relations</div>
+            <div class="bg-gray-100 p-3 rounded-md text-left font-semibold animated-element">Petitions & Agreements
+            </div>
+            <div class="bg-gray-100 p-3 rounded-md text-left font-semibold animated-element">Corporate Law Expertise
+            </div>
+            <div class="bg-gray-100 p-3 rounded-md text-left font-semibold animated-element">Legal Drafting</div>
+          </div>
+
+          <!-- Education & Location -->
+          <div class="flex flex-wrap gap-4">
+            <div class="bg-gray-100 px-4 py-2 rounded-md animated-element">
+              <span class="block text-sm text-gray-600 font-semibold">Education</span>
+              <span class="font-bold">B.A. LL.B (Hons)</span>
+            </div>
+            <div class="bg-gray-100 px-4 py-2 rounded-md animated-element">
+              <span class="block text-sm text-gray-600 font-semibold">Location</span>
+              <span class="font-bold">New Delhi, India</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Expanded Legal Content Section -->
+      <div class="mt-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 inline-block pb-2 border-b-2 border-black">Welcome to Gaur Legal
+          Service</h2>
+        <p class="mb-6 text-lg text-gray-600 font-semibold">
+          Gaur Legal Service is a trusted law firm that offers top-quality legal assistance and personal attention to
+          every client. With a strong commitment to justice and expert legal advice, we aim to provide our clients with
+          comprehensive legal solutions tailored to their unique needs. We believe in a client-first approach, ensuring
+          that each individual or business receives personalized and effective legal representation.
+        </p>
+
+        <h3 class="text-2xl font-semibold mb-4">Who We Are</h3>
+        <p class="mb-6 text-lg text-gray-600 font-semibold">
+          Gaur Legal Service is composed of a team of highly skilled and experienced lawyers dedicated to protecting our
+          clients' rights. Our lawyers are experts in diverse areas of law, and our firm handles various types of legal
+          cases, ranging from civil disputes to corporate law, human rights, criminal defense, family matters, and
+          constitutional issues. We are committed to providing reliable legal advice with integrity, transparency, and
+          compassion.
+        </p>
+
+        <h3 class="text-2xl font-semibold mb-4">Our Legal Services</h3>
+        <p class="mb-6 text-lg text-gray-600 font-semibold">
+          We offer a wide range of legal services across multiple areas of practice. Our legal experts specialize in:
+        </p>
+        <ul class="list-disc pl-6 mb-6 text-lg text-gray-600 font-semibold">
+          <li><strong>Litigation Services:</strong> Representing clients in civil and criminal courts, including case
+            preparation, filing of petitions, and court representation.</li>
+          <li><strong>Corporate Law:</strong> Advising businesses on compliance, mergers, acquisitions, and drafting
+            contracts and agreements to safeguard corporate interests.</li>
+          <li><strong>Family Law:</strong> Handling divorce, child custody, property disputes, and other family-related
+            legal matters.</li>
+          <li><strong>Human Rights Law:</strong> Defending the fundamental rights of individuals against violations,
+            ensuring justice for marginalized and vulnerable communities.</li>
+          <li><strong>Real Estate Law:</strong> Providing legal assistance on property transactions, disputes, and
+            regulatory compliance regarding real estate development and sales.</li>
+          <li><strong>Constitutional Law:</strong> Advising clients on constitutional matters, including fundamental
+            rights, public interest litigation (PIL), and judicial review.</li>
+          <li><strong>Criminal Defense:</strong> Representing individuals accused of criminal offenses, providing a
+            robust defense to ensure fair trials and just outcomes.</li>
+          <li><strong>Corporate Compliance:</strong> Helping businesses stay compliant with local, national, and
+            international laws, preventing legal issues before they arise.</li>
+        </ul>
+
+        <h3 class="text-2xl font-semibold mb-4 ">Our Approach</h3>
+        <p class="mb-6 text-lg text-gray-600 font-semibold">
+          At Gaur Legal Service, we place our clients at the center of everything we do. We understand that each case is
+          unique, which is why we work closely with our clients to develop customized legal strategies. Whether you are
+          an individual seeking legal advice or a corporation requiring legal support, we take a proactive approach to
+          ensure that your legal needs are met with the utmost care and expertise.
+        </p>
+        <p class="mb-6 text-lg text-gray-600 font-semibold">
+          We believe in building long-term relationships with our clients based on trust and transparency. Our legal
+          team is not only well-versed in the law but also committed to providing practical solutions that result in the
+          best possible outcomes. From handling legal disputes to drafting contracts and advising on compliance matters,
+          we strive to be a reliable and accessible resource for all our clients’ legal needs.
+        </p>
+
+        <h3 class="text-2xl font-semibold mb-4">Why Choose Us?</h3>
+        <ul class="list-disc pl-6 mb-6 text-lg text-gray-600 font-semibold">
+          <li><strong>Experience:</strong> With years of legal experience, we have a deep understanding of the
+            complexities of the law across various industries.</li>
+          <li><strong>Expertise:</strong> Our team consists of legal professionals who specialize in different areas of
+            law, providing comprehensive legal support for all types of cases.</li>
+          <li><strong>Client-Focused Approach:</strong> We are dedicated to putting your interests first and ensuring
+            that your legal matters are handled with the highest level of professionalism and care.</li>
+          <li><strong>Ethical Standards:</strong> We adhere to the highest ethical standards, ensuring transparency,
+            integrity, and honesty in every interaction with our clients.</li>
+          <li><strong>Tailored Solutions:</strong> We take a personalized approach to each case, ensuring that the legal
+            strategies we implement align with your specific goals and needs.</li>
+        </ul>
+
+        <h3 class="text-2xl font-semibold mb-4">Contact Us</h3>
+        <p class="mb-6 text-lg text-gray-600 font-semibold">
+          If you require legal assistance, don't hesitate to contact us. We are here to guide you through every step of
+          the legal process with professionalism, care, and dedication. Reach out to us today to schedule a consultation
+          and discuss your legal needs.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="bg-gray-50 text-black px-6 py-16">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold mb-12 inline-block pb-2 border-b-2 border-black">
+        Legal Services</h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Card 1 -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition duration-300 animated-element">
+          <div class="text-4xl text-gray-800 mb-4">
+            <i class="fas fa-gavel"></i>
+          </div>
+          <h3 class="font-semibold text-lg mb-2">Supreme Court Litigation</h3>
+          <p class="text-sm text-gray-600 font-semibold">
+            Expert representation before the Supreme Court of India for constitutional matters, appeals, and
+            precedent-setting cases.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition duration-300 animated-element">
+          <div class="text-4xl text-gray-800 mb-4">
+            <i class="fas fa-balance-scale"></i>
+          </div>
+          <h3 class="font-semibold text-lg mb-2">International Arbitration</h3>
+          <p class="text-sm text-gray-600 font-semibold">
+            Specialized expertise in international arbitration proceedings, representing clients in complex cross-border
+            disputes.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition duration-300 animated-element">
+          <div class="text-4xl text-gray-800 mb-4">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <h3 class="font-semibold text-lg mb-2">Corporate Legal Advisory</h3>
+          <p class="text-sm text-gray-600 font-semibold">
+            Strategic legal counsel for businesses on compliance, governance, and corporate restructuring matters.
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition duration-300 animated-element">
+          <div class="text-4xl text-gray-800 mb-4">
+            <i class="fas fa-file-alt"></i>
+          </div>
+          <h3 class="font-semibold text-lg mb-2">Legal Drafting & Research</h3>
+          <p class="text-sm text-gray-600 font-semibold">
+            Comprehensive legal research, drafting of petitions, agreements, and other legal documents with meticulous
+            attention to detail.
+          </p>
+        </div>
+      </div>
+
+      <h3 class="text-2xl font-bold mt-12 mb-6">Additional Services</h3>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Start a Business -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition duration-300 animated-element">
+          <h4 class="font-semibold text-lg mb-2">Start a Business</h4>
+          <ul class="list-disc list-inside text-sm text-gray-600 font-semibold space-y-1">
+            <li>Private Limited Company (PVT)</li>
+            <li>Limited Liability Partnership (LLP)</li>
+            <li>One Person Company (OPC)</li>
+            <li>Sole Proprietorship</li>
+            <li>Partnership Firm</li>
+            <li>Section 8 Company (Non-Profit)</li>
+          </ul>
+        </div>
+
+        <!-- Intellectual Property -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition duration-300 animated-element">
+          <h4 class="font-semibold text-lg mb-2">Trademark, Copyright & Patent</h4>
+          <ul class="list-disc list-inside text-sm text-gray-600 font-semibold space-y-1">
+            <li>Trademark Registration</li>
+            <li>Trademark Rectification</li>
+            <li>Trademark Objection</li>
+            <li>Trademark Opposition</li>
+            <li>Trademark Renewal</li>
+            <li>Copyright Registration</li>
+            <li>Patent Search</li>
+            <li>Provisional Patent</li>
+            <li>Patent Registration</li>
+          </ul>
+        </div>
+
+        <!-- GST & Tax -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition duration-300 animated-element">
+          <h4 class="font-semibold text-lg mb-2">GST & Tax Consultation</h4>
+          <ul class="list-disc list-inside text-sm text-gray-600 font-semibold space-y-1">
+            <li>GST Registration</li>
+            <li>GST Return Filing</li>
+            <li>Income Tax Return</li>
+          </ul>
+        </div>
+      </div>
+
+
+      <h3 class="text-2xl font-bold mt-12 mb-6">Practice Areas</h3>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Human Rights Law -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition duration-300 animated-element">
+          <div class="text-4xl text-red-600 mb-4">
+            <i class="fas fa-hand-holding-heart"></i>
+          </div>
+          <h3 class="font-semibold text-lg mb-2">Human Rights Law</h3>
+          <p class="text-sm text-gray-600 font-semibold">
+            We advocate for civil, political, and social rights, handling international human rights cases with a focus
+            on fairness, dignity, and access to justice.
+          </p>
+        </div>
+
+        <!-- Family Law -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition duration-300 animated-element">
+          <div class="text-4xl text-pink-500 mb-4">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3 class="font-semibold text-lg mb-2">Family Law</h3>
+          <p class="text-sm text-gray-600 font-semibold">
+            From divorce to child custody and support, we offer compassionate and strategic legal support during
+            challenging family matters.
+          </p>
+        </div>
+
+        <!-- Constitutional Law -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition duration-300 animated-element">
+          <div class="text-4xl text-indigo-600 mb-4">
+            <i class="fas fa-landmark"></i>
+          </div>
+          <h3 class="font-semibold text-lg mb-2">Constitutional Law</h3>
+          <p class="text-sm text-gray-600 font-semibold">
+            Protecting civil liberties and constitutional rights through high-stakes litigation and expert legal
+            interpretation.
+          </p>
+        </div>
+
+        <!-- Corporate Law -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition duration-300 animated-element">
+          <div class="text-4xl text-green-600 mb-4">
+            <i class="fas fa-building"></i>
+          </div>
+          <h3 class="font-semibold text-lg mb-2">Corporate Law</h3>
+          <p class="text-sm text-gray-600 font-semibold">
+            Providing strategic legal guidance for businesses on mergers, contracts, governance, and regulatory
+            compliance.
+          </p>
+        </div>
+
+        <!-- Civil Law -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition duration-300 animated-element">
+          <div class="text-4xl text-blue-500 mb-4">
+            <i class="fas fa-file-contract"></i>
+          </div>
+          <h3 class="font-semibold text-lg mb-2">Civil Law</h3>
+          <p class="text-sm text-gray-600 font-semibold">
+            Handling disputes over contracts, property, personal injury, and more with professionalism and proven
+            results.
+          </p>
+        </div>
+
+        <!-- Criminal Law -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition duration-300 animated-element">
+          <div class="text-4xl text-gray-700 mb-4">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3 class="font-semibold text-lg mb-2">Criminal Law</h3>
+          <p class="text-sm text-gray-600 font-semibold">
+            Strong defense for all criminal charges, focusing on fairness, evidence review, and achieving the best
+            possible outcome.
+          </p>
+        </div>
+      </div>
+
+      <!-- Services Availability Notice -->
+      <div class="mt-12 text-left text-sm text-gray-700 px-4">
+        <p class="font-semibold text-lg mb-4">Our legal services are available across India and beyond:</p>
+        <ul class="list-disc text-gray-600 space-y-2 pl-5 max-w-3xl">
+          <li class="text-base">In <span class="font-semibold">New Delhi, Uttar Pradesh, and Madhya Pradesh</span>, we
+            provide services for both <span class="font-semibold">High Courts and District Courts</span>.</li>
+          <li class="text-base">In <span class="font-semibold">all other states and Union Territories of India</span>,
+            we offer services for <span class="font-semibold">High Courts only</span>.</li>
+          <li class="text-base">We also offer services in <span class="font-semibold">Nepal</span> and <span
+              class="font-semibold">Bhutan</span>, exclusively for <span class="font-semibold">High Courts</span>.</li>
+        </ul>
+      </div>
+
+
+    </div>
+  </section>
+
+  <section id="experience" class="bg-white text-black px-6 py-16">
+    <div class="max-w-7xl mx-auto">
+
+      <h2 class="text-3xl md:text-4xl font-bold mb-12 inline-block pb-2 border-b-2 border-black">
+        Professional Timeline</h2>
+      <!-- Timeline wrapper centered -->
+      <div class="relative mx-auto max-w-[700px]">
+        <!-- Center vertical line -->
+        <div class="absolute top-0  transform -translate-x-1/2 h-full border-l-2 border-gray-300"></div>
+
+        <!-- Timeline Item -->
+        <div class="mb-12 relative flex">
+          <!-- Bullet -->
+          <div class="absolute w-4 h-4 bg-black rounded-full transform -translate-x-1/2"></div>
+          <!-- Content to the right of center line -->
+          <div class="pl-10 ml-1/2 w-full text-left animated-element">
+            <p class="text-sm text-gray-500">Oct 2024 – Present</p>
+            <h3 class="text-xl font-semibold text-gray-800">Advocate, Supreme Court of India</h3>
+            <p class="mt-2 text-gray-700">
+              Providing expert legal representation in the Supreme Court of India, specializing in legal advisory,
+              international arbitration, criminal law, and commercial arbitration.
+            </p>
+          </div>
+        </div>
+
+        <!-- Repeat this structure for each item -->
+
+        <div class="mb-12 relative flex">
+          <div class="absolute w-4 h-4 bg-black rounded-full transform -translate-x-1/2"></div>
+          <div class="pl-10 ml-1/2 w-full text-left animated-element">
+            <p class="text-sm text-gray-500">Mar 2025 – Apr 2025</p>
+            <h3 class="text-xl font-semibold text-gray-800">Founder, Gaur Legal Service</h3>
+            <p class="mt-2 text-gray-700">
+              Established a specialized legal practice offering comprehensive legal services including litigation,
+              corporate advisory, and dispute resolution.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-12 relative flex">
+          <div class="absolute w-4 h-4 bg-black rounded-full transform -translate-x-1/2"></div>
+          <div class="pl-10 ml-1/2 w-full text-left animated-element">
+            <p class="text-sm text-gray-500">Feb 2025 – Apr 2025</p>
+            <h3 class="text-xl font-semibold text-gray-800">National Legal Advisor, Social Justice & Women Empowerment
+              Board</h3>
+            <p class="mt-2 text-gray-700">
+              Served as the National Legal Advisor for a government organization focused on social justice and women's
+              empowerment initiatives.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-12 relative flex">
+          <div class="absolute w-4 h-4 bg-black rounded-full transform -translate-x-1/2"></div>
+          <div class="pl-10 ml-1/2 w-full text-left animated-element">
+            <p class="text-sm text-gray-500">Apr 2025</p>
+            <h3 class="text-xl font-semibold text-gray-800">Legal Advisor, SOLO CABS TECHNOLOGY PRIVATE LIMITED</h3>
+            <p class="mt-2 text-gray-700">
+              Provided specialized legal counsel to a technology company, addressing corporate compliance, contracts,
+              and regulatory matters.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-12 relative flex">
+          <div class="absolute w-4 h-4 bg-black rounded-full transform -translate-x-1/2"></div>
+          <div class="pl-10 ml-1/2 w-full text-left animated-element">
+            <p class="text-sm text-gray-500">Oct 2024 – Feb 2025</p>
+            <h3 class="text-xl font-semibold text-gray-800">Legal Associate, Lex Bharti Chambers</h3>
+            <p class="mt-2 text-gray-700">
+              Handled legal drafting, research, and client advisory services with expertise in criminal law and
+              intellectual property matters.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-0 relative flex">
+          <div class="absolute w-4 h-4 bg-black rounded-full transform -translate-x-1/2"></div>
+          <div class="pl-10 ml-1/2 w-full text-left animated-element">
+            <p class="text-sm text-gray-500">Aug 2024</p>
+            <h3 class="text-xl font-semibold text-gray-800">Advocate Intern, Office of Sr. Advocate Pradeep Rai</h3>
+            <p class="mt-2 text-gray-700">
+              Gained valuable experience through internship at the office of a Senior Advocate in the Supreme Court of
+              India, focusing on legal research and case preparation.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="bg-[#f9fafb] text-black py-10 px-4">
+    <div class="max-w-7xl mx-auto">
+
+      <h2 class="text-3xl md:text-4xl font-bold mb-12 inline-block pb-2 border-b-2 border-black">
+        Education & Certifications
+      </h2>
+
+
+
+      <!-- Cards Container (Centered) -->
+      <div class="flex justify-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+          <!-- Education Card -->
+          <div class="bg-white shadow-sm rounded-lg p-5 max-w-md border border-gray-200 animated-element">
+            <div class="flex items-center mb-3">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="#0f172a" viewBox="0 0 24 24" class="w-6 h-6 mr-2">
+                <path d="M12 2L1 7l11 5 9-4.09V17h2V7L12 2z" />
+                <path
+                  d="M11 12.8L3.12 9.05 2 9.58l9 4.09v6.13l-3-1.37v-2.91H6v3.92l5 2.28 5-2.28v-6.13l-1-.45-4 .09z" />
+              </svg>
+              <h3 class="text-lg font-semibold text-gray-900">Education</h3>
+            </div>
+            <p class="text-base font-semibold text-gray-900">B.A. LL.B (Hons)</p>
+            <p class="text-sm font-semibold text-gray-700">Maharaja Chhatrasal Bundelkhand University (MCBU),
+              Chhatarpur, Madhya Pradesh
+            </p>
+            <p class="text-xs font-semibold text-gray-500 mt-2">Aug 2018 - Mar 2022</p>
+            <p class="text-xs font-semibold text-gray-500">Grade: A</p>
+          </div>
+
+          <!-- Certifications Card -->
+          <div class="bg-white shadow-sm rounded-lg p-5 max-w-md border border-gray-200 animated-element">
+            <div class="flex items-center mb-3">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="#0f172a" viewBox="0 0 24 24" class="w-6 h-6 mr-2">
+                <path d="M17 2H7c-1.1 0-2 .9-2 2v16l7-3 7 3V4c0-1.1-.9-2-2-2z" />
+              </svg>
+              <h3 class="text-lg font-semibold text-gray-900">Certifications</h3>
+            </div>
+            <div class="mb-3">
+              <p class="text-base font-semibold text-gray-900">Legal Internship</p>
+              <p class="text-sm font-semibold text-gray-700">Lex Bharti Chambers</p>
+              <p class="text-xs font-semibold text-gray-500">Aug 2024</p>
+            </div>
+            <div class="mb-3">
+              <p class="text-base font-semibold text-gray-900">International Model United Nations</p>
+              <p class="text-xs font-semibold text-gray-500">Aug 2024 - Sep 2024</p>
+            </div>
+            <div>
+              <p class="text-base font-medium text-gray-900">Legal Internship</p>
+              <p class="text-sm font-semibold text-gray-700">Office of Sr. Advocate Pradeep Rai</p>
+              <p class="text-xs font-semibold text-gray-500">Jul 2024</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="memberships" class="bg-white text-black py-10 px-4">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold mb-12 inline-block pb-2 border-b-2 border-black">
+        Memberships & Affiliations
+      </h2>
+
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <!-- Card -->
+        <div class="bg-gray-50 border rounded-lg p-6 text-center shadow-sm animated-element">
+          <div class="text-4xl text-gray-600 mb-4"><i class="fas fa-gavel"></i></div>
+          <h3 class="font-semibold">Supreme Court Bar Association</h3>
+          <p class="text-sm font-semibold text-gray-500 mt-1">Member since Oct 2024</p>
+        </div>
+
+        <div class="bg-gray-50 border rounded-lg p-6 text-center shadow-sm animated-element">
+          <div class="text-4xl text-gray-600 mb-4"><i class="fas fa-scale-balanced"></i></div>
+          <h3 class="font-semibold">Delhi High Court Bar Association</h3>
+          <p class="text-sm font-semibold text-gray-500 mt-1">Member since Dec 2024</p>
+        </div>
+
+        <div class="bg-gray-50 border rounded-lg p-6 text-center shadow-sm animated-element">
+          <div class="text-4xl text-gray-600 mb-4"><i class="fas fa-landmark"></i></div>
+          <h3 class="font-semibold">High Court Bar Association<br />Allahabad</h3>
+          <p class="text-sm font-semibold text-gray-500 mt-1">Member since May 2024</p>
+        </div>
+
+        <div class="bg-gray-50 border rounded-lg p-6 text-center shadow-sm animated-element">
+          <div class="text-4xl text-gray-600 mb-4"><i class="fas fa-globe"></i></div>
+          <h3 class="font-semibold">Singapore International Arbitration Centre</h3>
+          <p class="text-sm font-semibold text-gray-500 mt-1">Member since Jan 2025</p>
+        </div>
+
+        <div class="bg-gray-50 border rounded-lg p-6 text-center shadow-sm animated-element">
+          <div class="text-4xl text-gray-600 mb-4"><i class="fas fa-gavel"></i></div>
+          <h3 class="font-semibold">London Court of International Arbitration</h3>
+          <p class="text-sm font-semibold text-gray-500 mt-1">Member since Jan 2025</p>
+        </div>
+
+        <div class="bg-gray-50 border rounded-lg p-6 text-center shadow-sm animated-element">
+          <div class="text-4xl text-gray-600 mb-4"><i class="fas fa-handshake"></i></div>
+          <h3 class="font-semibold">IAMC Hyderabad</h3>
+          <p class="text-sm font-semibold text-gray-500 mt-1">Member since Jan 2025</p>
+        </div>
+
+        <div class="bg-gray-50 border rounded-lg p-6 text-center shadow-sm animated-element">
+          <div class="text-4xl text-gray-600 mb-4"><i class="fas fa-users"></i></div>
+          <h3 class="font-semibold">Young ICCA</h3>
+          <p class="text-sm font-semibold text-gray-500 mt-1">Member since Jan 2025</p>
+        </div>
+
+        <div class="bg-gray-50 border rounded-lg p-6 text-center shadow-sm animated-element">
+          <div class="text-4xl text-gray-600 mb-4"><i class="fas fa-building"></i></div>
+          <h3 class="font-semibold">Ministry of Social Justice &<br />Empowerment</h3>
+          <p class="text-sm font-semibold text-gray-500 mt-1">Member since Jan 2025</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contact" class="bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
+
+      <!-- Contact Information -->
+      <div class="animated-element">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">Get In Touch</h2>
+        <div class="space-y-4 text-gray-700">
+          <p class="text-sm sm:text-base">
+            <strong>Email:</strong><br>
+            gaurlegalservice@gmail.com <br>
+            adv.hanumantsinghscbamember@gmail.com
+          </p>
+          <p class="text-sm sm:text-base">
+            <strong>Phone:</strong><br>
+            +91 8318162415, +91 9310556161
+          </p>
+          <p class="text-sm sm:text-base">
+            <strong>Location:</strong><br>
+            M.C Setalvad Lawyers Chambers 404, Library – 4 Tilak Marg, New Delhi, Delhi 110001
+          </p>
+        </div>
+      </div>
+
+
+      <!-- Contact Form -->
+      <div>
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Contact Form</h2>
+        <form id="contactForm" class="space-y-4 text-black font-semibold">
+          <input type="text" id="name" placeholder="Your Name" required
+            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-transparent focus:ring-2 focus:ring-blue-500 transition-all duration-400 ease-in-out" />
+          <input type="email" id="email" placeholder="Your Email" required
+            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-transparent focus:ring-2 focus:ring-blue-500 transition-all duration-400 ease-in-out" />
+          <textarea id="message" placeholder="Your Message" required
+            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-transparent focus:ring-2 focus:ring-blue-500 transition-all duration-400 ease-in-out"></textarea>
+
+          <button type="submit" class="w-full bg-black text-white py-2 rounded-md hover:bg-gray-700 animated-element">
+            Send via WhatsApp
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-black text-white pt-8">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+
+      <!-- Social icons -->
+      <div class="flex space-x-6">
+        <a href="https://www.linkedin.com/in/adv-hanumant-singh-3806741b4/" target="_blank" rel="noopener noreferrer"
+          class="transform transition duration-200 hover:-translate-y-1 hover:scale-90 text-white hover:text-gray-400">
+          <i class="fab fa-linkedin fa-lg"></i>
+        </a>
+        <a href="https://x.com/Hanuman74700714?s=09" target="_blank" rel="noopener noreferrer"
+          class="transform transition duration-200 hover:-translate-y-1 hover:scale-90 text-white hover:text-gray-400">
+          <i class="fab fa-twitter fa-lg"></i>
+        </a>
+        <a href="https://www.instagram.com/adv.hanumant_singh/" target="_blank" rel="noopener noreferrer"
+          class="transform transition duration-200 hover:-translate-y-1 hover:scale-90 text-white hover:text-gray-400">
+          <i class="fab fa-instagram fa-lg"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Bottom section -->
+    <div
+      class="max-w-7xl mx-auto mt-6 pb-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 space-y-4 md:space-y-0">
+      <p>© <span id="year"></span> Gaur Legal Service. All rights reserved.</p>
+      <div class="flex space-x-6">
+        <a href="/privacy-policy.html" target="_blank" class="hover:text-white">Privacy Policy</a>
+        <a href="/terms-and-conditions.html" target="_blank" class="hover:text-white">Terms of Service</a>
+      </div>
+    </div>
+
+    <!-- Credit -->
+    <div class="bg-[#231f20] px-4 py-5">
+      <div class="max-w-7xl mx-auto flex justify-center items-center space-x-1 text-center">
+
+        <!-- Label + Devigns in single line -->
+        <span class="text-[13px] sm:text-[15px] font-semibold text-white text-opacity-80">
+          Designed & Developed By
+        </span>
+
+        
+    <!-- Devigns Link -->
+<a href="https://www.devigns.in" target="_blank" rel="noopener noreferrer"
+   class="text-[18px] sm:text-[20px] text-white flex items-center hover:underline"
+   style="font-family: 'Amsterdam Three', sans-serif; font-weight: 550; margin-left: 12px;">
+  Devigns
+  <img src="Assets/Devigns-Icon.png" alt="Devigns Icon" class="ml-1 w-10">
+</a>
+
+      </div>
+    </div>
+
+
+
+  </footer>
+
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+  </script>
+
+  <!-- JavaScript to Control Modal -->
+  <script>
+    function openPaymentModal() {
+      document.getElementById('paymentModal').classList.remove('hidden');
+    }
+
+    function closePaymentModal() {
+      document.getElementById('paymentModal').classList.add('hidden');
+    }
+  </script>
+</body>
+
+</html>
